@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "title": "The Amazing World of Gumball Quiz",
+    "questions": [
+      {
+        "question": "Who is Gumball's best friend?",
+        "options": ["Darwin", "Penny", "Tobias", "Banana Joe"],
+        "correctAnswer": "Darwin"
+      },
+      {
+        "question": "What color is Gumball?",
+        "options": ["Blue", "Pink", "Yellow", "Green"],
+        "correctAnswer": "Blue"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Adventure Time Quiz",
+    "questions": [
+      {
+        "question": "Who is Finn’s best friend?",
+        "options": ["Jake", "BMO", "Princess Bubblegum", "Ice King"],
+        "correctAnswer": "Jake"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Regular Show Quiz",
+    "questions": [
+      {
+        "question": "What are the main characters' names?",
+        "options": ["Mordecai and Rigby", "Finn and Jake", "Gumball and Darwin", "Tom and Jerry"],
+        "correctAnswer": "Mordecai and Rigby"
+      }
+    ]
+  }
+]

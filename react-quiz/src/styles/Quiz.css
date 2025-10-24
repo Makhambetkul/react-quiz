@@ -1,0 +1,21 @@
+.question{
+    color: rgb(252, 218, 0);
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 7px;
+    padding: 10px;
+    max-width: 600px;
+    margin-left: 440px;
+    box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+-webkit-box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+-moz-box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+}
+
+.next{
+    margin: 10px;
+    margin-left: 550px;
+    box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+-webkit-box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+-moz-box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+}

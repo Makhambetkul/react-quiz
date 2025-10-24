@@ -1,0 +1,10 @@
+* {
+  font-family: 'Press Start 2P', cursive;
+}
+
+* {
+  background-image: url("C:\Users\HP Pavilion\react-quiz\public\rainbow.png");
+  background-repeat: repeat;      
+  background-size: 500px;  
+  background-position: center;         
+}

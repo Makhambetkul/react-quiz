@@ -1,0 +1,30 @@
+.quiz-button{
+    width: 400px;
+    text-align: center;
+    background-color: rgb(255, 149, 0);
+    color: white;
+    margin-left: 500px;
+    box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+-webkit-box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+-moz-box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+}
+
+
+.quiz-button:hover{
+    background-color: white;
+    color: rgb(255, 149, 0);
+}
+
+.search-input{
+    margin-left: 480px;
+}
+
+.no-results{
+    color: rgb(255, 149, 0);
+    max-width: 400px;
+    background-color: white;
+    font-size:larger;
+    padding: 5px;
+    margin: 10px;
+    text-align:center;
+}

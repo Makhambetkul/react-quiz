@@ -1,0 +1,50 @@
+h1{
+    color: rgb(252, 218, 0);
+    text-align: center;
+    margin-top: 130px;
+    background-color: white;
+    border-radius: 7px;
+    padding: 10px;
+    max-width: 900px;
+    margin-left: 300px;
+    box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+-webkit-box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+-moz-box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+}
+
+.amazing{
+    color:rgb(255, 194, 194);
+}
+
+.world{
+    color: rgb(255, 149, 0);
+}
+
+.gumball{
+    color: rgb(48, 196, 255);
+}
+
+.feedback{
+    color: white;
+    text-align: center;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("/rainbow.png");
+  background-repeat: repeat;
+  background-size: 500px;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.start{
+    margin-left: 550px;
+    box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+-webkit-box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+-moz-box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+}
+
+
