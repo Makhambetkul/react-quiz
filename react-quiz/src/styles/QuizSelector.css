@@ -1,9 +1,12 @@
 .quiz-button{
-    width: 400px;
-    text-align: center;
+    min-width: 400px;
+    margin: 10px;
+    height: 50px;
     background-color: rgb(255, 149, 0);
     color: white;
-    margin-left: 500px;
+    border:none;
+    border-radius: 7px;
+    margin-left: 400px;
     box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
 -webkit-box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
 -moz-box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
@@ -27,4 +30,42 @@
     padding: 5px;
     margin: 10px;
     text-align:center;
+}
+
+.favorite-button {
+  margin-left: 10px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  max-width: 30px;
+}
+
+
+.favorite-button.favorited {
+  color: red;
+}
+
+
+.favorite-button.not-favorited {
+  color: gray;
+}
+
+.details-button{
+    border:none;
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 7px;
+    margin: 5px;
+    color: white;
+    background-color: rgb(255, 149, 0); 
+    box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+-webkit-box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+-moz-box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+}
+
+.details-button:hover{
+    background-color: orange;
 }

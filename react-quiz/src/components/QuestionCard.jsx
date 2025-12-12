@@ -18,9 +18,9 @@ export default function QuestionCard({
 
           if (selected) {
             if (opt === correctAnswer) {
-              className += "-correct"; 
+              className += " correct"; 
             } else if (opt === selected) {
-              className += "-wrong";   
+              className += " wrong";   
             }
           }
 
@@ -41,7 +41,6 @@ export default function QuestionCard({
         })}
       </div>
 
-      {}
       {selected && (
         <p className={selected === correctAnswer ? "correct" : "wrong"}>
           {selected === correctAnswer

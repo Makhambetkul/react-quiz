@@ -1,59 +1,78 @@
-import { useState, useEffect } from "react";
-import QuizSelector from "./components/QuizSelector";
-import Quiz from "./components/Quiz";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect, useState } from "react";
+import HomePage from "./pages/HomePage";
+import CategoryPage from "./pages/CategoryPage";
+import QuizPage from "./pages/QuizPage";
 import Review from "./components/Review";
-import { getQuizzes } from "./api";
-import './App.css';
+import "./App.css";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import PrivateRoute from "./components/PrivateRoute";
+import ProfilePage from "./pages/ProfilePage";
+import FavoritesPage from "./pages/FavoritesPage";
+import Navbar from "./components/Navbar";
+import QuestionDetailsPage from "./pages/QuestionDetailsPage";
+import AboutUs from "./pages/AboutUs";
 
 
 export default function App() {
-  const [stage, setStage] = useState("select"); // select | quiz | review
   const [quizzes, setQuizzes] = useState([]);
-  const [selectedQuiz, setSelectedQuiz] = useState(null);
-  const [score, setScore] = useState(0);
-  const [total, setTotal] = useState(0);
 
   useEffect(() => {
-    getQuizzes()
-      .then(setQuizzes)
-      .catch((err) => {
-        console.error("Failed to load quizzes:", err);
-      });
+    fetch("https://quiz-api-kqm9.onrender.com/quizzes")
+      .then((res) => res.json())
+      .then((data) => setQuizzes(data));
   }, []);
 
-  const startQuiz = (quiz) => {
-    setSelectedQuiz(quiz);
-    setStage("quiz");
-  };
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
 
-  const finishQuiz = (finalScore, totalQ) => {
-    setScore(finalScore);
-    setTotal(totalQ);
-    setStage("review");
-  };
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/quizzes/:id/details" element={<QuestionDetailsPage />} />
 
-  const restart = () => {
-    setStage("select");
-    setSelectedQuiz(null);
-    setScore(0);
-  };
+        
+        <Route
+          path="/profile"
+          element={
+            <PrivateRoute>
+              <ProfilePage />
+            </PrivateRoute>
+          }
+        />
 
-  if (stage === "select") {
-    return <QuizSelector quizzes={quizzes} onSelect={startQuiz} />;
-  }
+        <Route
+          path="/favorites"
+          element={
+            <PrivateRoute>
+              <FavoritesPage />
+            </PrivateRoute>
+          }
+        />
 
-  if (stage === "quiz") {
-    return <Quiz quiz={selectedQuiz} onFinish={finishQuiz} />;
-  }
+        
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
 
-  if (stage === "review") {
-    return (
-      <Review
-        quiz={selectedQuiz}
-        score={score}
-        total={total}
-        onRestart={restart}
-      />
-    );
-  }
+        
+        <Route path="/" element={<HomePage quizzes={quizzes} />} />
+
+        
+        <Route path="/quizzes/:quizId/categories" element={<CategoryPage />} />
+
+        
+        <Route
+          path="/quizzes/:quizId/categories/:categoryId"
+          element={<QuizPage />}
+        />
+
+        
+        <Route path="/review" element={<Review />} />
+
+        
+        <Route path="*" element={<p>Page not found</p>} />
+      </Routes>
+    </Router>
+  );
 }

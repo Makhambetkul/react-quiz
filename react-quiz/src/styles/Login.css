@@ -1,0 +1,52 @@
+.login{
+    background-color: rgb(48, 196, 255);
+    max-width: 700px;
+    margin-left: 380px;
+    margin-top: 170px;
+    border: none;
+    border-radius: 7px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+-webkit-box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+-moz-box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+}
+
+input{
+    margin: 5px;
+}
+
+.logb{
+    width: 200px;
+    height: 50 px;
+    background-color: white;
+    color: rgb(255, 196, 0);
+    border: none;
+    border-radius: 7px;
+    padding: 5px;
+    box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+-webkit-box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+-moz-box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+}
+
+.logb:hover{
+    background-color: rgb(255, 196, 0);
+    color: white;
+}
+
+h2{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+}
+
+body{
+    font-family: 'Press Start 2P', cursive;
+}
+
+button{
+    font-family: 'Press Start 2P', cursive;
+}
+
+input{
+    font-family: 'Press Start 2P', cursive;
+}

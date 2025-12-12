@@ -1,15 +1,15 @@
-const BASE_URL = "http://localhost:4000/api";
+import axios from "axios";
 
-// Получить список всех тестов
-export async function getQuizzes() {
-  const res = await fetch(`${BASE_URL}/quizzes`);
-  if (!res.ok) throw new Error("Failed to fetch quizzes");
-  return res.json();
-}
+const API = axios.create({
+  baseURL: "https://quiz-api-kqm9.onrender.com",
+});
 
-// Получить конкретный тест по ID
-export async function getQuizById(id) {
-  const res = await fetch(`${BASE_URL}/quizzes/${id}`);
-  if (!res.ok) throw new Error("Quiz not found");
-  return res.json();
-}
+export const getQuizzes = async () => {
+  const res = await API.get("/quizzes");
+  return res.data;
+};
+
+export const getQuizById = async (id) => {
+  const res = await API.get(`/quiz-by-category/${id}`);
+  return res.data;
+};

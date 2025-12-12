@@ -1,0 +1,22 @@
+.quiz-category{
+    background-color: rgb(255, 196, 0);
+    max-width: 800px;
+    margin-left: 350px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+-webkit-box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+-moz-box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+}
+
+.question-list{
+    background-color: white;
+    margin: 10px;
+    border-radius: 7px;
+}
+
+.quiz-details{
+    margin-top: 10px;
+}
+

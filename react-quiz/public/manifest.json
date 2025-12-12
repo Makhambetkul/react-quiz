@@ -1,0 +1,37 @@
+{
+  "short_name": "QuizApp",
+  "name": "Quiz Application",
+  "id": "/",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4CAF50",
+  "description": "Test your knowledge with fun quizzes!",
+  "icons": [
+    {
+      "src": "/icons/192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icons/512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+
+  "screenshots": [
+  {
+    "src": "/screenshots/screenshot1.png",
+    "sizes": "800x600",
+    "type": "image/png",
+    "form_factor": "wide"
+  },
+  {
+    "src": "/screenshots/screenshot2.png",
+    "sizes": "360x640",
+    "type": "image/png"
+  }
+]
+
+}

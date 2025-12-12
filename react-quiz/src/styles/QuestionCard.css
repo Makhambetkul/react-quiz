@@ -16,7 +16,7 @@
     justify-content:center;
 }
 
-button{
+.option-button{
     min-width: 400px;
     margin: 10px;
     height: 50px;
@@ -51,4 +51,44 @@ body {
 
 .option-button-wrong{
     color: rgb(216, 28, 28);
+}
+
+.ansb{
+    margin: 10px;
+    margin-left: 300px;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(255, 149, 0);
+    color: white;
+    box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+-webkit-box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+-moz-box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+
+}
+
+.ansb:hover{
+    background-color: white;
+    color: rgb(255, 149, 0);
+}
+
+.ansbbb{
+    margin: 10px;
+    margin-left: 450px;
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(255, 149, 0);
+    color: white;
+    box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+-webkit-box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+-moz-box-shadow: 6px 7px 5px 0px rgba(88,81,81,1);
+
+}
+
+.ansbbb:hover{
+    background-color: white;
+    color: rgb(255, 149, 0);
 }
